@@ -1,5 +1,5 @@
 const { blob } = require('stream/consumers')
-const { Slate, User } = require(`../models`)
+const { Movie, Slate, User } = require(`../models`)
 const { bulkBuild } = require('../models/movie.model')
 const db = require('./db')
 
@@ -81,7 +81,7 @@ async function seed () {
     await Slate.bulkCreate([
     {
         date: 22-11-17,
-        review: "I just can't get on board with the dragons. What was Scorsese thinking. There's no way they saved the King's Speech"
+        review: "I just can't get on board with the dragons. What was Scorsese thinking. Why do the gangsters have dragons"
     },
     
     {
@@ -135,29 +135,30 @@ async function seed () {
         {
             title: "The Matrix",
             year: 1999,
-            plot: "",
+            plot: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
             directors: [
                 {
-                    name: "Lana Wachowski"
+                    name01: "Lana Wachowski"
                 },
                 {
-                    name: "Lilly Wachowski"
+                    name02: "Lilly Wachowski"
                 }
             ],
             actors: [
                 {
-                    name: "Keanu Reeves"
+                    name01: "Keanu Reeves"
                 },
                 {
-                    name: "Laurence Fishburne"
+                    name02: "Laurence Fishburne"
                 },
                 {
-                    name: "Carrie-Anne Moss"
+                    name03: "Carrie-Anne Moss"
                 }
             ],
             image: "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
         },
-        
+
     ])
 }
 
+module.exports = seed;

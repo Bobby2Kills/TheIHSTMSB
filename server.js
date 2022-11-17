@@ -1,7 +1,7 @@
 const express = require ('express')
 const app = express()
 const port = 3000;
-const seed = require('.seed')
+const seed = require('./db/seed')
 const userRouter = require('./routes/userRouter')
 const slateRouter = require('./routes/slateRouter')
 const movieRouter = require('./routes/movieRouter')

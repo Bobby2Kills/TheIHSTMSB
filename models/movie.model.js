@@ -13,38 +13,20 @@ Movie.init({
     plot: {
         type:DataTypes.STRING
     },
-    directors:[
-        {
-            name: {
-                type:DataTypes.STRING
-            }
-        }, 
-        {
-            name: {
-                type: DataTypes.STRING
-            }
-
-        }
-    ],
-    actors: [
-        {
-            name: {
-                type:DataTypes.STRING
-            }
-        }, 
-        {
-            name: {
-                type: DataTypes.STRING
-            }
-
-        },
-        {
-            name: {
-                type: DataTypes.STRING
-            }
-
-        },
-    ],
+    director01: { type:DataTypes.STRING
+    },
+    director02: {
+            type: DataTypes.STRING
+    },
+    actor01: {
+        type:DataTypes.STRING
+    },
+    actor02: {
+        type: DataTypes.STRING
+    },
+    actor03: {
+        type: DataTypes.STRING
+    },
     image: {
             type: DataTypes.STRING
         }
