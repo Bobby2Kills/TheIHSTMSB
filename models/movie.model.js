@@ -46,12 +46,8 @@ Movie.init({
         },
     ],
     image: {
-        url: {
             type: DataTypes.STRING
         }
-    }
-
-
 }, { sequelize: db })
 
 module.exports = Movie

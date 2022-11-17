@@ -15,7 +15,7 @@ User.init({
         type:DataTypes.STRING
     },
     userSince: {
-        type:DataTypes.DATE
+        type:DataTypes.DATEONLY
     }
 }, {sequelize: db})
 
