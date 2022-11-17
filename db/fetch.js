@@ -36,7 +36,7 @@ const crewOptions = {
 
 // tt0133093
 
-const movieName = "The Matrix"
+const movieName = "schindler's list"
 
 // retrieve the movie name and title
 const movieInfo = async(movieName) => {
@@ -96,7 +96,8 @@ const topCast = async(movieName) => {
 Promise.all([
     movieInfo(movieName),
     plotSummary(movieName),
-    movieImg(movieName), // just grabs img url for now
     movieDirector(movieName),
     topCast(movieName),
+    movieImg(movieName), // just grabs img url for now
 ]).then(data => console.log(data))
+

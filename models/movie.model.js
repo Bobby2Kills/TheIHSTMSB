@@ -13,7 +13,8 @@ Movie.init({
     plot: {
         type:DataTypes.STRING
     },
-    director01: { type:DataTypes.STRING
+    director01: { 
+        type:DataTypes.STRING
     },
     director02: {
             type: DataTypes.STRING
