@@ -10,6 +10,47 @@ Movie.init({
     year: {
         type:DataTypes.INTEGER
     },
+    plot: {
+        type:DataTypes.STRING
+    },
+    directors:[
+        {
+            name: {
+                type:DataTypes.STRING
+            }
+        }, 
+        {
+            name: {
+                type: DataTypes.STRING
+            }
+
+        }
+    ],
+    actors: [
+        {
+            name: {
+                type:DataTypes.STRING
+            }
+        }, 
+        {
+            name: {
+                type: DataTypes.STRING
+            }
+
+        },
+        {
+            name: {
+                type: DataTypes.STRING
+            }
+
+        },
+    ],
+    image: {
+        url: {
+            type: DataTypes.STRING
+        }
+    }
+
 
 }, { sequelize: db })
 
