@@ -11,13 +11,13 @@
 </head>
 <body>
     <header>
-        <h2>slateIt!</h2>
+        <h2 class="pageTitle">slateIt!</h2>
         <img src="/src/images/logo.png" alt="the I haven't seen that movie slate-a-base Logo"  class="logo">
-        <h1>The "I Haven't See That Movie" Slate-a-Base</h1>
+        <h1 id="mainTitle">The "I Haven't See That Movie" Slate-a-Base</h1>
     </header>
     <main>
-        <form action=" " method="GET" >
-            <section class="searchBar">
+        <form action=" " method="GET" class="searchBar" >
+            <section>
                 <input type="text" name="searchBar" placeholder="search movies or slaters">
                 <select name="searchType" id="searchType">
                     <option value="movies">movies</option>
@@ -27,7 +27,7 @@
             </section>
             <button id=submitSearch> </button>
         </form>
-        <section class="movieSection">
+        <section id="movieSection">
             <section class="movieTitleBar">
                 <h2 class="subheader">Movie (year)</h2>
                 <button class="skip">skip</button> 
@@ -35,7 +35,7 @@
             <article class="plotSummary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa et consequuntur ipsum blanditiis ipsam illo odit nemo, nam quasi consectetur dicta suscipit aliquid aut vitae eum veniam excepturi? Dolore, autem.
             </article>
-            <figure class="moviePoster">
+            <figure id="moviePoster">
                 <img src="/src/images/bumtrix.jpg" alt="movie poster" class="moviePoster">
             </figure>
             <section class="yourSlate">
@@ -54,39 +54,46 @@
             </section>
         </section>
         <section id="slatest">
-            <h3>What's the Slatest?</h3>
-            <h4>name,date,time</h4>
-            <figure class="profilePic">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="profile picture" id="profilePic">
+            <section id="slatestTitle">
+                <h3>What's the Slatest?</h3>
+            </section>
+            <section id="slatestTime">
+                <h4>name,date,time</h4>
+            </section>
+            <figure id="profilePic">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="profile picture" class="profilePic">
             </figure>
-            <figure class="movieImg">
-                <img src="/src/images/v1.png" alt="movie poster" id="slatestPoster">
+            <figure id="slatestPoster">
+                <img src="/src/images/v1.png" alt="movie poster" class="slatestPoster">
             </figure>
-            <article class="slateText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero a unde suscipit quas nihil accusantium animi! Accusantium asperiores rem, ipsa quod ab itaque molestiae ipsam laboriosam sequi quo voluptas praesentium!</article>
-            <a href="https://www.google.com">see more</a>
+            <article id="slateText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero a unde suscipit quas nihil accusantium animi! Accusantium asperiores rem, ipsa quod ab itaque molestiae ipsam laboriosam sequi quo voluptas praesentium! <a href="https://www.google.com">see more</a></article>
+            
         </section>
-        <button class="existing">
+        <button id="existing">
             existing slates
         </button>
-        <section class="dNc">
-            <h3>Director(s) and cast</h3>
-            <a id="moreCast" href="https://www.imdb.com">see more</a>
-            <figure class="cast">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" id="director1">
-            </figure>
-            <figure class="cast">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" id="director2">
-            </figure>
-            <figure class="cast">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor1">
-            </figure>
-            <figure class="cast">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor2">
-            </figure>
-            <figure class="cast">
-                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor3">
-            </figure>
-
+        <section id="dNc">
+            <section id="dNcTitle">
+                <h3>Director(s) and cast</h3>
+            </section>
+            <section id="seeMoreCast">
+                <a id="moreCast" href="https://www.imdb.com">see more</a>
+            </section>
+                <figure id="cast1">
+                    <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" class="cast">
+                </figure>
+                <figure id="cast2">
+                    <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" class="cast">
+                </figure>
+                <figure id="cast3">
+                    <img src="/src/images/OrderPreviewImage.jpg" alt="actor" class="cast">
+                </figure>
+                <figure id="cast4">
+                    <img src="/src/images/OrderPreviewImage.jpg" alt="actor" class="cast">
+                </figure>
+                <figure id="cast5">
+                    <img src="/src/images/OrderPreviewImage.jpg" alt="actor" class="cast">
+                </figure>
         </section>
 
     </main>
