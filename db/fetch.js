@@ -36,7 +36,7 @@ const crewOptions = {
 
 // tt0133093
 
-const movieName = "schindler's list"
+const movieName = "masters of disguise"
 
 // retrieve the movie name and title
 const movieInfo = async(movieName) => {
