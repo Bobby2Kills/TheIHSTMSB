@@ -12,4 +12,14 @@ movieRouter.get("/", async(req,res) => {
     }
 })
 
+movieRouter.get(`/:id`, async(req,res) => {
+    try {
+        const oneMovie = await Movie.findByPk(req.params.id)
+        res.send(oneMovie)
+
+    }
+    catch (error){
+        res.send(error)
+    }
+})
 module.exports = movieRouter

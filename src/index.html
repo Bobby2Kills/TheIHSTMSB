@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate It! The IHSTMSB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/src/icon/icon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>slateIt!</h2>
+        <img src="/src/images/logo.png" alt="the I haven't seen that movie slate-a-base Logo"  class="logo">
+        <h1>The "I Haven't See That Movie" Slate-a-Base</h1>
+    </header>
+    <main>
+        <form action=" " method="GET" >
+            <section class="searchBar">
+                <input type="text" name="searchBar" placeholder="search movies or slaters">
+                <select name="searchType" id="searchType">
+                    <option value="movies">movies</option>
+                    <option value="slaters">slaters</option>
+
+                </select>
+            </section>
+            <button id=submitSearch> </button>
+        </form>
+        <section class="movieSection">
+            <section class="movieTitleBar">
+                <h2 class="subheader">Movie (year)</h2>
+                <button class="skip">skip</button> 
+            </section>
+            <article class="plotSummary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa et consequuntur ipsum blanditiis ipsam illo odit nemo, nam quasi consectetur dicta suscipit aliquid aut vitae eum veniam excepturi? Dolore, autem.
+            </article>
+            <figure class="moviePoster">
+                <img src="/src/images/bumtrix.jpg" alt="movie poster" class="moviePoster">
+            </figure>
+            <section class="yourSlate">
+                <h2 class="subheader">
+                    Your Slate
+                </h2>
+            </section>
+            <section class="yourSubmission">
+                <form action=" " method="PUT" >
+                    <section class="yourSubmission">
+                        <textarea id="writeSlate" name="writeSlate" placeholder="your text"> </textarea> 
+                    </section>
+                    <button id="post">post</button>
+                    <button id="preview">preview</button>
+                </form>
+            </section>
+        </section>
+        <section id="slatest">
+            <h3>What's the Slatest?</h3>
+            <h4>name,date,time</h4>
+            <figure class="profilePic">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="profile picture" id="profilePic">
+            </figure>
+            <figure class="movieImg">
+                <img src="/src/images/v1.png" alt="movie poster" id="slatestPoster">
+            </figure>
+            <article class="slateText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero a unde suscipit quas nihil accusantium animi! Accusantium asperiores rem, ipsa quod ab itaque molestiae ipsam laboriosam sequi quo voluptas praesentium!</article>
+            <a href="https://www.google.com">see more</a>
+        </section>
+        <button class="existing">
+            existing slates
+        </button>
+        <section class="dNc">
+            <h3>Director(s) and cast</h3>
+            <a id="moreCast" href="https://www.imdb.com">see more</a>
+            <figure class="cast">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" id="director1">
+            </figure>
+            <figure class="cast">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="movie director" id="director2">
+            </figure>
+            <figure class="cast">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor1">
+            </figure>
+            <figure class="cast">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor2">
+            </figure>
+            <figure class="cast">
+                <img src="/src/images/OrderPreviewImage.jpg" alt="actor" id="actor3">
+            </figure>
+
+        </section>
+
+    </main>
+    <footer>cash and gifts accepted. Bobby2Kills in the mix 2k6</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    min-height: 100vh;
+}
+
+.moviePoster {
+    width: 200px;
+    height: calc(200px * (16/9));
+    object-fit: contain;
+}
+
+#profilePic {
+    width: 200px;
+    height: calc(200px * (16/9));
+    object-fit: contain;
+}
+#slatestPoster {
+    width: 200px;
+    height: calc(200px * (16/9));
+    object-fit: contain;
+}
+
+.cast{
+    width: 100px;
+    height: calc(100px * (16/9));
+    object-fit: contain;
+}
+
